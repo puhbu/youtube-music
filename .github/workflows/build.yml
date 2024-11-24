@@ -70,7 +70,7 @@ jobs:
           sudo flatpak install -y flathub org.freedesktop.Sdk/x86_64/20.08
           sudo flatpak install -y flathub org.electronjs.Electron2.BaseApp/x86_64/20.08
           pnpm release:linux
-
+          
       - name: Build and release on Windows
         if: startsWith(matrix.os, 'windows') && (github.repository == 'puhbu/youtube-music' && github.event_name != 'pull_request')
         env:
@@ -78,9 +78,10 @@ jobs:
         run: |
           pnpm release:win
 
-        - name: Upload a Build Artifact
-          uses: actions/upload-artifact@v4.4.3
-          path: path/**/pack/YouTube-Music-Web-Setup-3.6.2.exe
+       
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4.4.3
+        path: path/**/pack/YouTube-Music-Web-Setup-3.6.2.exe
 
       - name: Test
         uses: coactions/setup-xvfb@v1
