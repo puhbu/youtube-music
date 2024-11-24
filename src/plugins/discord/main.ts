@@ -14,8 +14,8 @@ import { t } from '@/i18n';
 import type { SetActivity } from '@xhayper/discord-rpc/dist/structures/ClientUser';
 import type { DiscordPluginConfig } from './index';
 
-// Application ID registered by @th-ch/youtube-music dev team
-const clientId = '1177081335727267940';
+// mrooooow
+const clientId = '1146182425836273745';
 
 export interface Info {
   rpc: DiscordClient;
