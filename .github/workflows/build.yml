@@ -81,7 +81,8 @@ jobs:
        
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.4.3
-        path: path/**/pack/YouTube-Music-Web-Setup-3.6.2.exe
+        with:
+          path: path/**/pack/YouTube-Music-Web-Setup-3.6.2.exe
 
       - name: Test
         uses: coactions/setup-xvfb@v1
