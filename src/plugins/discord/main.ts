@@ -14,7 +14,7 @@ import { t } from '@/i18n';
 import type { SetActivity } from '@xhayper/discord-rpc/dist/structures/ClientUser';
 import type { DiscordPluginConfig } from './index';
 
-// mrooooow
+// mrooooow this will so not work
 const clientId = '1146182425836273745';
 
 export interface Info {
